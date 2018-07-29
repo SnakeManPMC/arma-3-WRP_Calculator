@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>121</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_HeightmapSize">
+       <property name="text">
+        <string>Heightmap Grid Size</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_Heightmap">
+       <property name="currentIndex">
+        <number>10</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>4 x 4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8 x 8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>16x16</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>32 x 32</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>64 x 64</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>128 x 128</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>256 x 256</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>512 x 512</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1024 x 1024</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2048 x 2048</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4096 x 4096</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8192 x 8192</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>16384 x 16384</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>32768 x 32768</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>65536 x 65536</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>71</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_CellSize">
+       <property name="text">
+        <string>Cell Size</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_CellSize">
+       <property name="maximum">
+        <double>999.950000000000045</double>
+       </property>
+       <property name="singleStep">
+        <double>0.050000000000000</double>
+       </property>
+       <property name="value">
+        <double>50.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>20</y>
+      <width>111</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_SatRes">
+       <property name="text">
+        <string>Satellite Resolution</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinBox_SatRes">
+       <property name="minimum">
+        <number>32</number>
+       </property>
+       <property name="maximum">
+        <number>512000</number>
+       </property>
+       <property name="value">
+        <number>12800</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>112</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_MeterPerPixel">
+       <property name="text">
+        <string>Sat Meter/Pixel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_MeterPerPixel"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>100</y>
+      <width>89</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_MeterPerPixel_Input">
+       <property name="text">
+        <string>Sat Meter/Pixel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_MeterPerPixel">
+       <property name="minimum">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>9999.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>1.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_UseMeterPerPixel">
+       <property name="text">
+        <string>Use M/PX</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>112</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_TextureLayer">
+       <property name="text">
+        <string>Texture Layer</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_TextureLayer"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>135</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_RecSatRes">
+       <property name="text">
+        <string>Recommended Sat Res</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_RecSatRes"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>391</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item>
+      <widget class="QLabel" name="label_TerrainSizeMeters">
+       <property name="text">
+        <string>Terrain Size in Meters</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_TerrainSizeMeters"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>410</y>
+      <width>205</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_Clipboard_Short">
+       <property name="text">
+        <string>Clipboard Short</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Clipboard_Long">
+       <property name="text">
+        <string>Clipboard Long</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>290</y>
+      <width>121</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_9">
+     <item>
+      <widget class="QLabel" name="label_PresetTerrainSizes">
+       <property name="text">
+        <string>Preset Terrain Sizes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_PresetTerrainSizes">
+       <property name="currentIndex">
+        <number>5</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>2km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>15km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>20km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>40km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>81km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>102km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>143km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>163km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>204km</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>20</y>
+      <width>112</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_10">
+     <item>
+      <widget class="QLabel" name="label_LandGrid">
+       <property name="text">
+        <string>LandGrid</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_LandGrid"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_Summary">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionPMC_Editing_Wiki"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionPMC_Editing_Wiki">
+   <property name="text">
+    <string>Web: PMC Editing Wiki</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
